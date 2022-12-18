@@ -6,6 +6,19 @@ class Home extends BaseController
 {
     public function index()
     {
-        return view('index');
+        $dados['ativo'] = 'home';
+        return view('home', $dados);
+    }
+
+    public function sobre()
+    {
+        $dados['ativo'] = 'sobre';
+        return view('sobre', $dados);
+    }
+
+    public function contato()
+    {
+        $dados['ativo'] = 'contato';
+        return view('contato', $dados);
     }
 }
